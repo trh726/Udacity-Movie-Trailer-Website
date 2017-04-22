@@ -36,7 +36,7 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             padding-top: 20px;
         }
         .movie-tile:hover {
@@ -113,7 +113,7 @@ main_page_content = '''
       </div>
     </div>
     <div class="container">
-      {movie_tiles}
+        {movie_tiles}
     </div>
   </body>
 </html>
@@ -121,10 +121,12 @@ main_page_content = '''
 
 
 # A single movie entry html template
+#Added the movie description in a paragraph tag below the title
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
+    <p>{movie_description}</p>
 </div>
 '''
 
@@ -144,6 +146,8 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            #added a description of the movie storyline for use in the page
+            movie_description=movie.storyline,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
