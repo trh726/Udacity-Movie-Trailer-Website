@@ -2,7 +2,7 @@
 class Movie(object):
     #Docstring for class Movie
     """This class provides a way to store a Movie's title, poster image url and youtube trailer url."""
-    #__init__ function initializes class Movie and takes 3 arguments
+    #__init__ function initializes class Movie and takes 4 arguments
     def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
         #creates an instance variable title from the first argument - used by fresh_tomatoes
         self.title = movie_title
