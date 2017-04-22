@@ -3,7 +3,7 @@
 Source code for a Movie Trailer website.  
 ----
 
-This python program creates a webpage with a list of 6 movies including the title, a description, the poster image, and the trailer for each film.  
+This python program creates a webpage with a list of 6 movies including the title, a description, the poster image, and the trailer for each film. It makes use of the fresh_tomatoes.py module from the [ud036_StarterCode repository](https://github.com/adarsh0806/ud036_StarterCode.git).  
 
 To run:
 1. download or clone the repository.
