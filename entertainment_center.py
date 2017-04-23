@@ -1,3 +1,13 @@
+"""Initializes instances of media.Movies, stores them and calls fresh_tomatoes.open_movies_page.
+
+    This module initializes 6 instances of the class Movie from the media
+    module. This class takes 4 arguments: a title, a movie description, a url
+    for the movie poster, and a youtube url for the trailer. Once these 6
+    instances have been constructed, they're stored in the constant MOVIES.
+    MOVIES is the argument for the open_movies_page function in the
+    fresh_tomatoes module, which is called last and generates a webpage of the
+    stored information.
+"""
 import fresh_tomatoes
 import media
 
